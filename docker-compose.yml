@@ -27,20 +27,20 @@ services:
     container_name: labo-node1
     environment:
       - VIRTUAL_HOST=api.node1.net
-      - VIRTUAL_PORT=3000
+      - VIRTUAL_PORT=3001
     ports:
-      - "3001:3000"
+      - "3001:3001"
     networks:
       kevin-network:
-  node2:
-    build: ./node2
-    container_name: labo-node2
-    environment:
-      - VIRTUAL_HOST=api.node2.net
-      - VIRTUAL_PORT=3000
-    ports:
-      - "3002:3000"
-    networks:
-      kevin-network:
+  # node2:
+  #   build: ./node2
+  #   container_name: labo-node2
+  #   environment:
+  #     - VIRTUAL_HOST=api.node2.net
+  #     - VIRTUAL_PORT=3000
+  #   ports:
+  #     - "3002:3000"
+  #   networks:
+  #     kevin-network:
 networks:
   kevin-network:
