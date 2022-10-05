@@ -1,18 +1,6 @@
 # LABORATORY-ANSIBLE
 
-#### Container
-
-Keep a docker running
-
-```bash
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-```
-
-Connect to controller
-
-```bash
-$ sudo docker exec -it labo-controller /bin/bash
-```
+This project is a laboratory with **Ansible** on AWS. In this lab, I am showing how did I create a controller server for applying modification to different ec2 servers. For this, I am using **Ansible** for automatizing the changement and **AWS EC2** for the server.
 
 ### AWS EC2
 
